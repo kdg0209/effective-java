@@ -9,6 +9,7 @@ import com.effectivejava.study.chapter01.item02.Pizza;
 import com.effectivejava.study.chapter01.item02.User;
 import com.effectivejava.study.chapter01.item04.Animal;
 import com.effectivejava.study.chapter01.item04.Dog;
+import com.effectivejava.study.chapter01.item06.AutoBoxing;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -19,8 +20,6 @@ public class EffectiveJavaApplication {
     public static void main(String[] args) {
         SpringApplication.run(EffectiveJavaApplication.class, args);
 
-        Animal dog = new Dog();
-        dog.breath();
-        System.out.println(dog.getClass());
+        System.out.println(AutoBoxing.sum());
     }
 }

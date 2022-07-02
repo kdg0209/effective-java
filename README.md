@@ -13,7 +13,10 @@
   - -
 
 - Item04. 인스턴스화를 막으려거든 private 생성자를 사용하라.
-  - https://kdg-is.tistory.com/337
+  - https://kdg-is.tistory.com/337Fz
 
 - Item05. 자원을 직접 명시하지 말고 의존 객체 주입을 사용하라.
   - https://kdg-is.tistory.com/338
+
+- Item06. 불필요한 객체 생성을 피하라.
+  - https://kdg-is.tistory.com/339
