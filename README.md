@@ -20,3 +20,6 @@
 
 - Item06. 불필요한 객체 생성을 피하라.
   - https://kdg-is.tistory.com/339
+
+- Item07. 다 쓴 객체 참조를 해제하라.
+  - https://kdg-is.tistory.com/341
