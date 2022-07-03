@@ -23,3 +23,6 @@
 
 - Item07. 다 쓴 객체 참조를 해제하라.
   - https://kdg-is.tistory.com/341
+
+- Item08. finalizer와 cleaner 사용을 피하라.
+  - https://kdg-is.tistory.com/342
