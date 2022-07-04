@@ -26,3 +26,8 @@
 
 - Item08. finalizer와 cleaner 사용을 피하라.
   - https://kdg-is.tistory.com/342
+
+- Item09. try-finally 보다는 try-with-resources를 사용하라.
+  - https://kdg-is.tistory.com/343
+
+
