@@ -33,3 +33,6 @@
 - Item10. equals는 일반 규약을 지켜 재정의하라.
   - https://kdg-is.tistory.com/344
 
+- Item11. equals를 재정의하려거든 hashCode도 재정의하라.
+  - https://kdg-is.tistory.com/345
+
