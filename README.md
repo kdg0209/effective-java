@@ -36,3 +36,6 @@
 - Item11. equals를 재정의하려거든 hashCode도 재정의하라.
   - https://kdg-is.tistory.com/345
 
+- Item12. toString을 항상 재정의하라.
+  - https://kdg-is.tistory.com/346
+
