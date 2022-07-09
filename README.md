@@ -41,3 +41,6 @@
 
 - Item13. clone 재정의는 주의해서 진행하라.
   - https://kdg-is.tistory.com/347
+
+- Item14. Comparable을 구현할지 고려하라.
+  - https://kdg-is.tistory.com/348
