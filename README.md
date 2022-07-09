@@ -39,3 +39,5 @@
 - Item12. toString을 항상 재정의하라.
   - https://kdg-is.tistory.com/346
 
+- Item13. clone 재정의는 주의해서 진행하라.
+  - https://kdg-is.tistory.com/347

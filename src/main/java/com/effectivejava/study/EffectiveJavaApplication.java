@@ -1,46 +1,28 @@
 package com.effectivejava.study;
 
-import com.effectivejava.study.chapter01.item01.SmartPhone;
-import com.effectivejava.study.chapter01.item01.SmartPhoneFactory;
-import com.effectivejava.study.chapter01.item01.Type;
-import com.effectivejava.study.chapter01.item02.MexicoPizza;
-import com.effectivejava.study.chapter01.item02.NewYorkPizza;
-import com.effectivejava.study.chapter01.item02.Pizza;
-import com.effectivejava.study.chapter01.item02.User;
-import com.effectivejava.study.chapter01.item04.Animal;
-import com.effectivejava.study.chapter01.item04.Dog;
-import com.effectivejava.study.chapter01.item06.AutoBoxing;
-import com.effectivejava.study.chapter01.item08.Room;
-import com.effectivejava.study.chapter01.item09.StringUtils;
-import com.effectivejava.study.chapter02.Item10.*;
-import com.effectivejava.study.chapter02.Item11.PhoneNumber;
+import com.effectivejava.study.chapter02.Item13.Product;
+import com.effectivejava.study.chapter02.Item13.Products;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 
 @SpringBootApplication
 public class EffectiveJavaApplication {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws CloneNotSupportedException {
         SpringApplication.run(EffectiveJavaApplication.class, args);
 
-        PhoneNumber phoneNumber1 = new PhoneNumber("010", "1234", "5678");
-        PhoneNumber phoneNumber2 = new PhoneNumber("010", "1234", "5678");
-        PhoneNumber phoneNumber3 = new PhoneNumber("011", "1234", "5678");
+        Products products = new Products();
+        products.push(new Product("그램", 100000));
+        products.push(new Product("맥북", 200000));
 
-        System.out.println(phoneNumber1.equals(phoneNumber2)); // true
-        System.out.println(phoneNumber1.equals(phoneNumber3)); // false
+        Products copyProducts = products.clone(); // 복시
+        copyProducts.push(new Product("삼성", 500000));
+        copyProducts.push(new Product("아이폰 미니 12", 100000));
+        products.push(new Product("아이폰 맥스 12", 150000));
 
-        Map<PhoneNumber, String> map = new HashMap<>();
-        map.put(phoneNumber1, "홍길동");
-
-        System.out.println(map.get(phoneNumber1)); // 홍길동
-        System.out.println(map.get(phoneNumber2)); // 홍길동
-        System.out.println(map.get(phoneNumber3)); // null
+        products.pop();
+        products.pop();
+        copyProducts.pop();
     }
 }
