@@ -44,3 +44,6 @@
 
 - Item14. Comparable을 구현할지 고려하라.
   - https://kdg-is.tistory.com/348
+
+- Item15. 클래스와 멤버의 접근 권한을 최소화하라.
+  - https://kdg-is.tistory.com/349
