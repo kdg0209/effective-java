@@ -53,3 +53,9 @@
 
 - Item17. 변경 가능성을 최소화하라.
   - https://kdg-is.tistory.com/351
+
+- Item18. 상속보다는 컴포지션을 사용하라.
+  - https://kdg-is.tistory.com/352
+
+- Item19. 상속을 고려해 설계하고 문서화하라. 그렇지 않다면 상속을 금지하라.
+  - https://kdg-is.tistory.com/353
