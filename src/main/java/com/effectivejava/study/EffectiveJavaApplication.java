@@ -10,6 +10,8 @@ import com.effectivejava.study.chapter03.Item17.Point;
 import com.effectivejava.study.chapter03.Item18.CompositionInstrumentedSet;
 import com.effectivejava.study.chapter03.Item18.InstrumentedHashSet;
 import com.effectivejava.study.chapter03.Item19.Sub;
+import com.effectivejava.study.chapter03.Item20.Calculator;
+import com.effectivejava.study.chapter03.Item20.CalculatorImpl;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -23,7 +25,8 @@ public class EffectiveJavaApplication {
     public static void main(String[] args) throws Exception {
         SpringApplication.run(EffectiveJavaApplication.class, args);
 
-        Sub sub = new Sub();
-        sub.overrideMe();
+        Calculator calculator = new CalculatorImpl();
+        calculator.add(10, 20);  // CalculatorImpl Call Override default Method : 30
+        Calculator.minus(10, 6); // Calculator Call static Method : 4
     }
 }

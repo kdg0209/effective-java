@@ -59,3 +59,6 @@
 
 - Item19. 상속을 고려해 설계하고 문서화하라. 그렇지 않다면 상속을 금지하라.
   - https://kdg-is.tistory.com/353
+
+- Item20. 추상 클래스보다는 인터페이스를 우선하라.
+  - https://kdg-is.tistory.com/354
