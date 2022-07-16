@@ -65,3 +65,6 @@
 
 - Item21. 인터페이스는 구현하는 쪽을 생각해 설계하라.
   - https://kdg-is.tistory.com/355
+
+- Item22. 인터페이스는 타입을 정의하는 용도로만 사용하라.
+  - https://kdg-is.tistory.com/356
