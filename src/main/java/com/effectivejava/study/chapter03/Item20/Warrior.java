@@ -6,7 +6,7 @@ public interface Warrior {
 
     void guard();
 
-    void applyItem(Item item);
+//    void applyItem(Item item);
 
     default void taunt() {
         System.out.println("약올리기~");

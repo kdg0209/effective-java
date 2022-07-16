@@ -13,19 +13,19 @@ public abstract class AbstractWarrior implements Warrior {
     private String name;
     private int hp;
     private int mp;
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Warrior)) return false;
-        Warrior that = (Warrior) o;
-        return Objects.equals(getHp(), that.getHp())
-                && Objects.equals(getMp(), that.getMp())
-                && Objects.equals(getName(), that.getName());
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(getName(), getHp(), getMp());
-    }
+//
+//    @Override
+//    public boolean equals(Object o) {
+//        if (this == o) return true;
+//        if (!(o instanceof Warrior)) return false;
+//        Warrior that = (Warrior) o;
+//        return Objects.equals(getHp(), that.getHp())
+//                && Objects.equals(getMp(), that.getMp())
+//                && Objects.equals(getName(), that.getName());
+//    }
+//
+//    @Override
+//    public int hashCode() {
+//        return Objects.hash(getName(), getHp(), getMp());
+//    }
 }

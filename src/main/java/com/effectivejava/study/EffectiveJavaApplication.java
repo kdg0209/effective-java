@@ -12,8 +12,11 @@ import com.effectivejava.study.chapter03.Item18.InstrumentedHashSet;
 import com.effectivejava.study.chapter03.Item19.Sub;
 import com.effectivejava.study.chapter03.Item20.Calculator;
 import com.effectivejava.study.chapter03.Item20.CalculatorImpl;
+import com.effectivejava.study.chapter03.Item24.OuterClass;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import static com.effectivejava.study.chapter03.Item24.OuterClass.StaticInnerClass;
 
 import java.util.*;
 import java.util.concurrent.CompletableFuture;
@@ -25,8 +28,16 @@ public class EffectiveJavaApplication {
     public static void main(String[] args) throws Exception {
         SpringApplication.run(EffectiveJavaApplication.class, args);
 
-        Calculator calculator = new CalculatorImpl();
-        calculator.add(10, 20);  // CalculatorImpl Call Override default Method : 30
-        Calculator.minus(10, 6); // Calculator Call static Method : 4
+        // 정적 멤버 클래스 생성
+        OuterClass.StaticInnerClass staticInnerClass = new StaticInnerClass();
+
+        System.gc();
+        System.out.println("GC 동작 완료");
+        System.in.read();
+        System.out.println(staticInnerClass);
+
+        // 비정적 멤버 클래스 생성
+        OuterClass outerClass = new OuterClass();
+        OuterClass.InnerClass innerClass = outerClass.new InnerClass();
     }
 }

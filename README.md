@@ -71,3 +71,6 @@
 
 - Item23. 태그 달린 클래스보다는 클래스 계층구조를 활용하라.
   - https://kdg-is.tistory.com/357
+
+- Item24. 멤버 클래스는 되도록 static으로 만들라.
+  - https://kdg-is.tistory.com/358
