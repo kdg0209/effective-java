@@ -68,3 +68,6 @@
 
 - Item22. 인터페이스는 타입을 정의하는 용도로만 사용하라.
   - https://kdg-is.tistory.com/356
+
+- Item23. 태그 달린 클래스보다는 클래스 계층구조를 활용하라.
+  - https://kdg-is.tistory.com/357
