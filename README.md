@@ -62,3 +62,6 @@
 
 - Item20. 추상 클래스보다는 인터페이스를 우선하라.
   - https://kdg-is.tistory.com/354
+
+- Item21. 인터페이스는 구현하는 쪽을 생각해 설계하라.
+  - https://kdg-is.tistory.com/355
