@@ -74,3 +74,6 @@
 
 - Item24. 멤버 클래스는 되도록 static으로 만들라.
   - https://kdg-is.tistory.com/358
+
+- Item26. 로 타입은 사용하지 말라.
+  - https://kdg-is.tistory.com/359
