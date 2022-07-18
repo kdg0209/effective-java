@@ -77,3 +77,6 @@
 
 - Item26. 로 타입은 사용하지 말라.
   - https://kdg-is.tistory.com/359
+
+- Item27. 비검사 경고를 제거하라.
+  - https://kdg-is.tistory.com/360
