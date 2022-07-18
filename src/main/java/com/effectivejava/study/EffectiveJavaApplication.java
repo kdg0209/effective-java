@@ -31,11 +31,11 @@ import java.util.concurrent.CompletableFuture;
 public class EffectiveJavaApplication {
     public static void main(String[] args) throws Exception {
 
-        try (StringUtils stringUtils = new StringUtils()) {
-            stringUtils.firstLineOfFileV3("/Users/gimdong-gyun/Documents/text.txt");
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
+        Object[] objects = new Long[1];
+        objects[0] = "문자열을 넣을 수 없습니다."; // ArrayStoreException 발생
+
+//        List<Object> list = new ArrayList<Long>(); // 컴파일 에러 발생
+//        list.add("문자열을 넣을 수 없습니다.");
     }
 }
 

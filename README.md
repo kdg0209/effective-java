@@ -80,3 +80,6 @@
 
 - Item27. 비검사 경고를 제거하라.
   - https://kdg-is.tistory.com/360
+
+- Item28. 배열보다는 리스트를 사용하라.
+  - https://kdg-is.tistory.com/361
