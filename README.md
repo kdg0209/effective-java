@@ -83,3 +83,6 @@
 
 - Item28. 배열보다는 리스트를 사용하라.
   - https://kdg-is.tistory.com/361
+
+- Item29. 이왕이면 제네릭 타입으로 만들라.
+  - https://kdg-is.tistory.com/362

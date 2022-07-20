@@ -17,7 +17,9 @@ import com.effectivejava.study.chapter03.Item24.OuterClass;
 import com.effectivejava.study.chapter03.Item25.Apple;
 import com.effectivejava.study.chapter05.Item26.Foods;
 import com.effectivejava.study.chapter05.Item26.Weapon;
-import com.effectivejava.study.chapter05.Item27.Food;
+import com.effectivejava.study.chapter05.Item29.Food;
+import com.effectivejava.study.chapter05.Item29.GenericStack;
+import com.effectivejava.study.chapter05.Item29.ObjectStack;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -30,12 +32,15 @@ import java.util.concurrent.CompletableFuture;
 @SpringBootApplication
 public class EffectiveJavaApplication {
     public static void main(String[] args) throws Exception {
+        Stack<Double> stack = new Stack<>();
 
-        Object[] objects = new Long[1];
-        objects[0] = "문자열을 넣을 수 없습니다."; // ArrayStoreException 발생
 
-//        List<Object> list = new ArrayList<Long>(); // 컴파일 에러 발생
-//        list.add("문자열을 넣을 수 없습니다.");
+        ObjectStack objectStack = new ObjectStack();
+        objectStack.push(new Food("피자"));
+        objectStack.push("String");
+
+        System.out.println(objectStack.pop()); // String
+        System.out.println(objectStack.pop()); // Food 객체
     }
 }
 
