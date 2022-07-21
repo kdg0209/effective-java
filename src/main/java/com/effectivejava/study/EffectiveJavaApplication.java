@@ -27,12 +27,16 @@ import static com.effectivejava.study.chapter03.Item24.OuterClass.StaticInnerCla
 
 import java.util.*;
 import java.util.concurrent.CompletableFuture;
+import java.util.function.UnaryOperator;
 
 
 @SpringBootApplication
 public class EffectiveJavaApplication {
+
+    private static final UnaryOperator<Object> IDENTITY_FN = t -> t;
     public static void main(String[] args) throws Exception {
         Stack<Double> stack = new Stack<>();
+
 
 
         ObjectStack objectStack = new ObjectStack();
@@ -41,6 +45,12 @@ public class EffectiveJavaApplication {
 
         System.out.println(objectStack.pop()); // String
         System.out.println(objectStack.pop()); // Food 객체
+    }
+
+    public static <E> Set<E> union(Set<? extends E> s1, Set<? extends E> s2) {
+        Set<E> result = new HashSet(s1);
+        result.addAll(s2);
+        return result;
     }
 }
 

@@ -86,3 +86,6 @@
 
 - Item29. 이왕이면 제네릭 타입으로 만들라.
   - https://kdg-is.tistory.com/362
+
+- Item30. 이왕이면 제네릭 메서드로 만들라.
+  - https://kdg-is.tistory.com/363
