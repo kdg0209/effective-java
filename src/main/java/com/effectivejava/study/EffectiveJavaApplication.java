@@ -20,6 +20,7 @@ import com.effectivejava.study.chapter05.Item26.Weapon;
 import com.effectivejava.study.chapter05.Item29.Food;
 import com.effectivejava.study.chapter05.Item29.GenericStack;
 import com.effectivejava.study.chapter05.Item29.ObjectStack;
+import com.effectivejava.study.chapter05.Item31.Stack;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -33,38 +34,14 @@ import java.util.function.UnaryOperator;
 @SpringBootApplication
 public class EffectiveJavaApplication {
 
-    private static final UnaryOperator<Object> IDENTITY_FN = t -> t;
     public static void main(String[] args) throws Exception {
-        Stack<Double> stack = new Stack<>();
+        Stack<Number> stack = new Stack<>();
+        List<Integer> integers = Arrays.asList(1, 2, 3, 4, 5);
 
-
-
-        ObjectStack objectStack = new ObjectStack();
-        objectStack.push(new Food("피자"));
-        objectStack.push("String");
-
-        System.out.println(objectStack.pop()); // String
-        System.out.println(objectStack.pop()); // Food 객체
-    }
-
-    public static <E> Set<E> union(Set<? extends E> s1, Set<? extends E> s2) {
-        Set<E> result = new HashSet(s1);
-        result.addAll(s2);
-        return result;
+        stack.pushAll(integers);
+        stack.popAll(new ArrayList<>()).stream().forEach(System.out::print); // 54321
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

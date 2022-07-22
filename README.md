@@ -89,3 +89,6 @@
 
 - Item30. 이왕이면 제네릭 메서드로 만들라.
   - https://kdg-is.tistory.com/363
+
+- Item31. 한정적 와일드카드를 사용해 API 유연성을 높이라.
+  - https://kdg-is.tistory.com/364
