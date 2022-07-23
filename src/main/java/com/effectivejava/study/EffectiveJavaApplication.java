@@ -28,6 +28,7 @@ import static com.effectivejava.study.chapter03.Item24.OuterClass.StaticInnerCla
 
 import java.util.*;
 import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ThreadLocalRandom;
 import java.util.function.UnaryOperator;
 
 
@@ -35,11 +36,65 @@ import java.util.function.UnaryOperator;
 public class EffectiveJavaApplication {
 
     public static void main(String[] args) throws Exception {
-        Stack<Number> stack = new Stack<>();
-        List<Integer> integers = Arrays.asList(1, 2, 3, 4, 5);
+//        dangerous(List.of("a", "b", "c"));
+//        printVarargs("a", "b", "c", "d");
+//        System.out.println();
+//        printVarargsGeneric(List.of("a", "b", "c", "d"));
+//
+//        Object[] strings = pickTwo("one", "two", "three");
+//        System.out.println("strings = " + strings);
 
-        stack.pushAll(integers);
-        stack.popAll(new ArrayList<>()).stream().forEach(System.out::print); // 54321
+        List<Integer> list1 = new ArrayList<>(Arrays.asList(1, 2, 3));
+        List<Integer> list2 = new ArrayList<>(Arrays.asList(4, 5, 6));
+        flatten(list1, list2).forEach(System.out::println);
+
+    }
+
+    static <T> T[] toArray(T... args) {
+        return args;
+    }
+
+    static <T> T[] pickTwo(T a, T b, T c) {
+        switch(ThreadLocalRandom.current().nextInt(3)) {
+            case 0: return toArray(a, b);
+            case 1: return toArray(b, c);
+            case 2: return toArray(a, c);
+        }
+        throw new AssertionError(); //도달할 수 없다.
+    }
+
+    static void dangerous(List<String>... stringLists) {
+        List<Integer> intLists = List.of(42);
+
+        Object[] objects = stringLists;
+        objects[0] = intLists;            // 힙 오염
+        String s = stringLists[0].get(0); // ClassCastException
+    }
+
+    public static void printVarargs(String... strings) {
+        System.out.println(strings.getClass().getSimpleName());
+
+        System.out.println("-----------------");
+        for(String s : strings) {
+            System.out.println(s);
+        }
+
+    }
+
+    public static void printVarargsGeneric(List<String>... strings) {
+        System.out.println(strings.getClass().getSimpleName());
+
+        System.out.println("-----------------");
+        Arrays.stream(strings).forEach(System.out::println);
+
+    }
+
+    static <T> List<T> flatten(List<? extends T>... lists) {
+        List<T> result = new ArrayList<>();
+        for (List<? extends T> list : lists) {
+            result.addAll(list);
+        }
+        return result;
     }
 }
 

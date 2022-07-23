@@ -92,3 +92,6 @@
 
 - Item31. 한정적 와일드카드를 사용해 API 유연성을 높이라.
   - https://kdg-is.tistory.com/364
+
+- Item32. 제네릭과 가변인수를 함께 쓸 때는 신중하라.
+  - https://kdg-is.tistory.com/365
