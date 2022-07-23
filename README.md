@@ -95,3 +95,6 @@
 
 - Item32. 제네릭과 가변인수를 함께 쓸 때는 신중하라.
   - https://kdg-is.tistory.com/365
+
+- Item33. 타입 안전 이종 컨테이노를 고려하라.
+  - https://kdg-is.tistory.com/366
