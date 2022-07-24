@@ -22,6 +22,7 @@ import com.effectivejava.study.chapter05.Item29.GenericStack;
 import com.effectivejava.study.chapter05.Item29.ObjectStack;
 import com.effectivejava.study.chapter05.Item31.Stack;
 import com.effectivejava.study.chapter05.Item33.Favorites;
+import com.effectivejava.study.chapter06.Item34.OperationV3;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -37,17 +38,12 @@ import java.util.function.UnaryOperator;
 public class EffectiveJavaApplication {
 
     public static void main(String[] args) throws Exception {
-        Favorites favorites = new Favorites();
+       double x = 10;
+       double y = 20;
 
-        favorites.putFavorites(String.class, "Java");
-        favorites.putFavorites(Integer.class, 123);
-        favorites.putFavorites(Class.class, Favorites.class);
-
-        String favoriteStr = favorites.getFavorites(String.class);
-        Integer favoriteInt = favorites.getFavorites(Integer.class);
-        Class favoriteClass = favorites.getFavorites(Class.class);
-
-        System.out.printf("%s %x %s %n", favoriteStr, favoriteInt, favoriteClass.getName());
+       for (OperationV3 op : OperationV3.values()) {
+           System.out.printf("%f %s %f = %f%n", x, op, y, op.apply(x,y));
+       }
     }
 }
 

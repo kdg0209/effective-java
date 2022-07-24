@@ -98,3 +98,6 @@
 
 - Item33. 타입 안전 이종 컨테이노를 고려하라.
   - https://kdg-is.tistory.com/366
+
+- Item34. int 상수대신 열거 타입을 사용하라.
+  - https://kdg-is.tistory.com/367
