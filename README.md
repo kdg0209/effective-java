@@ -101,3 +101,6 @@
 
 - Item34. int 상수대신 열거 타입을 사용하라.
   - https://kdg-is.tistory.com/367
+
+- Item35. ordinal 메서드 대신 인스턴스 필드를 사용하라.
+  - https://kdg-is.tistory.com/368
