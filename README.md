@@ -104,3 +104,6 @@
 
 - Item35. ordinal 메서드 대신 인스턴스 필드를 사용하라.
   - https://kdg-is.tistory.com/368
+
+- Item36. 비트 필드 대신 EnumSet을 사용하라.
+  - https://kdg-is.tistory.com/369
