@@ -107,3 +107,7 @@
 
 - Item36. 비트 필드 대신 EnumSet을 사용하라.
   - https://kdg-is.tistory.com/369
+
+
+- Item38. 확장할 수 있는 열거 타입이 필요하면 인터페이스를 사용하라.
+  - https://kdg-is.tistory.com/370
