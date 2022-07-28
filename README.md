@@ -111,3 +111,6 @@
 
 - Item38. 확장할 수 있는 열거 타입이 필요하면 인터페이스를 사용하라.
   - https://kdg-is.tistory.com/370
+
+- Item39. 명명패턴보다 애너테이션을 사용하라.
+  - https://kdg-is.tistory.com/371
