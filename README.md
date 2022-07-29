@@ -114,3 +114,6 @@
 
 - Item39. 명명패턴보다 애너테이션을 사용하라.
   - https://kdg-is.tistory.com/371
+
+- Item40. @Override 애너테이션을 일관되게 사용하라
+  - https://kdg-is.tistory.com/372
