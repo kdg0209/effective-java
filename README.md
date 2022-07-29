@@ -117,3 +117,6 @@
 
 - Item40. @Override 애너테이션을 일관되게 사용하라
   - https://kdg-is.tistory.com/372
+
+- Item41. 정의하려는 것이 타입이라면 마커 인터페이스를 사용하라
+  - https://kdg-is.tistory.com/373
