@@ -123,3 +123,6 @@
 
 - Item42. 익명클래스 보다는 람다를 사용하라
   - https://kdg-is.tistory.com/374
+
+- Item43. 람다보다는 메서드 참조를 사용하라
+  - https://kdg-is.tistory.com/375
