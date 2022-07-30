@@ -120,3 +120,6 @@
 
 - Item41. 정의하려는 것이 타입이라면 마커 인터페이스를 사용하라
   - https://kdg-is.tistory.com/373
+
+- Item42. 익명클래스 보다는 람다를 사용하라
+  - https://kdg-is.tistory.com/374
