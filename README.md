@@ -126,3 +126,6 @@
 
 - Item43. 람다보다는 메서드 참조를 사용하라
   - https://kdg-is.tistory.com/375
+
+- Item44. 표준 함수형 인터페이스를 사용하라
+  - https://kdg-is.tistory.com/376
