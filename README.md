@@ -129,3 +129,6 @@
 
 - Item44. 표준 함수형 인터페이스를 사용하라
   - https://kdg-is.tistory.com/376
+
+- Item45. 스트림은 주의해서 사용하라
+  - https://kdg-is.tistory.com/378
