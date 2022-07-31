@@ -132,3 +132,6 @@
 
 - Item45. 스트림은 주의해서 사용하라
   - https://kdg-is.tistory.com/378
+
+- Item46. 스트림에서는 부작용 없는 함수를 사용하라
+  - https://kdg-is.tistory.com/379
