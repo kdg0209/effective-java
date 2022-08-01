@@ -135,3 +135,6 @@
 
 - Item46. 스트림에서는 부작용 없는 함수를 사용하라
   - https://kdg-is.tistory.com/379
+
+- Item47. 반환 타입으로는 스트림보다 컬렉션이 낫다
+  - https://kdg-is.tistory.com/380
