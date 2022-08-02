@@ -141,3 +141,6 @@
 
 - Item48. 스트림 병렬화는 주의해서 적용하라
   - https://kdg-is.tistory.com/381
+
+- Item49. 매개변수가 유효한지 검사하라
+  - https://kdg-is.tistory.com/382
