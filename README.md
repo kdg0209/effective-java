@@ -144,3 +144,6 @@
 
 - Item49. 매개변수가 유효한지 검사하라
   - https://kdg-is.tistory.com/382
+
+- Item50. 적시에 방어적 복사본을 만들라
+  - https://kdg-is.tistory.com/383
