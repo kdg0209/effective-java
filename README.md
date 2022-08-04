@@ -147,3 +147,6 @@
 
 - Item50. 적시에 방어적 복사본을 만들라
   - https://kdg-is.tistory.com/383
+
+- Item51. 메서드 시그니처를 신중히 설계하라
+  - https://kdg-is.tistory.com/384
