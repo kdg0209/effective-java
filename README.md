@@ -150,3 +150,6 @@
 
 - Item51. 메서드 시그니처를 신중히 설계하라
   - https://kdg-is.tistory.com/384
+
+- Item52. 다중정의는 신중하게 사용하라
+  - https://kdg-is.tistory.com/385
