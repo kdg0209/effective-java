@@ -153,3 +153,9 @@
 
 - Item52. 다중정의는 신중하게 사용하라
   - https://kdg-is.tistory.com/385
+
+- Item53. 가변인수는 신중히 사용하라
+  - https://kdg-is.tistory.com/386
+
+- Item54. null이 아닌, 빈 컬렉션이나 배열을 반환하라
+  - https://kdg-is.tistory.com/387
