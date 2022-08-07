@@ -159,3 +159,7 @@
 
 - Item54. null이 아닌, 빈 컬렉션이나 배열을 반환하라
   - https://kdg-is.tistory.com/387
+
+- Item55. 옵셔널 반환은 신중히 하라
+  - https://kdg-is.tistory.com/388
+
