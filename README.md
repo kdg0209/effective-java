@@ -163,3 +163,6 @@
 - Item55. 옵셔널 반환은 신중히 하라
   - https://kdg-is.tistory.com/388
 
+- Item57. 지역변수의 범위를 최소화하라
+  - https://kdg-is.tistory.com/389
+
