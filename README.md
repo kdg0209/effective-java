@@ -166,3 +166,6 @@
 - Item57. 지역변수의 범위를 최소화하라
   - https://kdg-is.tistory.com/389
 
+- Item58. 전통적인 for문보다는 for-each문을 사용하라
+  - https://kdg-is.tistory.com/390
+
