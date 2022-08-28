@@ -169,3 +169,20 @@
 - Item58. 전통적인 for문보다는 for-each문을 사용하라
   - https://kdg-is.tistory.com/390
 
+- Item61. 박싱된 기본 타입보다는 기본 타입을 사용하라
+  - https://kdg-is.tistory.com/391
+
+- Item62. 다른 타입이 적절하다면 문자열 사용을 피하라
+  - https://kdg-is.tistory.com/392
+
+- Item63. 문자열 연결은 느리니 주의하라
+  - https://kdg-is.tistory.com/393
+
+- Item64. 객체는 인터페이스를 사용해 참조하라
+  - https://kdg-is.tistory.com/394
+
+- Item66. 네이티브 메서드는 신중히 사용하라
+  - https://kdg-is.tistory.com/395
+
+- Item69. 예외는 진짜 예외 상황에만 사용하라
+  - https://kdg-is.tistory.com/396
